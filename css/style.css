@@ -1,0 +1,268 @@
+/* Body */
+body, html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: #888;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(11, 19, 19);
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+   min-height: 100%;
+}
+
+.btn {
+   height: 50px;
+   width: 150px;
+   background-color: rgb(10, 10, 10);
+   border: 2px solid rgb(10, 10, 10);
+   box-shadow: -1px -1px 1px 0px rgb(255, 255, 255, 0.1), 1px 1px 12px 0px rgb(0, 0, 0, 0.3) ;
+   border-radius: 20px;
+}
+
+
+/* --------------END OF BODY------------------ */
+
+/* Parallax Effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first {
+   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/bg-img.jpg");
+   height: 30%;
+}
+
+.second {
+   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/space-bg.jpg");
+   height: 30%;
+}
+
+#bgVideo {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+   z-index: -1;
+ }
+ 
+/* --------------END OF PARALLAX EFFECT------------------ */
+
+/* Header */
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   background-attachment: fixed;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+   background-color: rgb(0, 11, 15);
+   height: 100%;
+}
+
+.intro {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   padding-top: 100px;
+   color: #F9F1E9;
+   top: 50%;
+   left: 50%;
+   text-align: center;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+@media screen and (max-width: 600px) {
+   .main-title {
+      font-size: 2.1em;
+   }
+   .sub-title {
+      font-size: 20px;
+   }
+   .social-links i{
+      color: honeydew;
+      border-radius: 100%;
+      padding: 10px;
+      margin: 5px;
+      border: 2px solid honeydew;
+   }
+}
+
+@media screen and (min-width: 600px) {
+   .main-title {
+      text-transform: uppercase;
+      font-size: 4.2em;
+      letter-spacing: 0.1em;
+      font-family: 'Comic Sans MS', 'Comic Sans', monospace;
+   }
+    
+   .sub-title {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 30px;
+      font-style: oblique;
+   }
+   .social-links i{
+      color: honeydew;
+      border-radius: 100%;
+      padding: 20px;
+      margin: 20px;
+      border: 2px solid honeydew;
+   }   
+}
+
+.social-links i:hover, .social-links i:focus{
+   background-color: rgb(74, 151, 151);
+   border: 2px solid rgb(74, 151, 151);
+   transform: rotateX(360deg);
+   transition: 0.7s;
+}
+
+.scroll-down-arrow {
+   position: absolute;
+   bottom: 5%;
+   left: 45%;
+}
+
+.scroll-down-arrow img {
+   width: 50px;
+   height: 50px;
+   color: honeydew;
+}
+
+.scroll-down-arrow img:hover {
+   transform: scale(1.2);
+   transition: 0.5s;
+}
+/* --------------END OF HEADER------------------ */
+
+/*About*/
+.about {
+   margin: 20px auto;
+   padding: 20px;
+   width: 100%;
+   background-color: rgb(21, 24, 24);
+   border-radius: 10px;
+   box-shadow: inset 1px 4px 33px 0px rgba(0,0,0,0.75);
+}
+
+hr {
+   background-color: rgb(82, 85, 82);
+}
+
+.about h1{
+   color: honeydew;
+   margin-left: 10px;
+}
+
+.about .about-text {
+   text-align: left;
+   padding-top: 30px;
+}
+
+.about img {
+   width: 200px;
+   height: 200px;
+   border-radius: 100%;
+   box-shadow: i-2px 2px 4px rgba(0, 0, 0, 0.5), 
+   2px -2px 0 rgba(255, 255, 255, 0.9);
+}
+
+.about strong {
+   color: honeydew;
+}
+/* --------------END OF ABOUT------------------ */
+
+/* Experience */
+.experience {
+   margin: 10px auto;
+   padding: 10px;
+   width: 100%;
+   background-color: honeydew;
+   border-radius: 10px;
+   box-shadow: inset 1px 4px 33px 0px rgba(0,0,0,0.75);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: darkslategrey;
+}
+
+/* END OF EXPERIENCE */
+
+/* Projects */
+
+.projects .card {
+   width: 20rem;
+   border: 2px solid antiquewhite;
+   border-radius: 10px;
+   box-shadow: 1px 4px 33px 0px rgba(0,0,0,0.75);
+}
+
+.projects .card .card-img-top {
+   border-radius: 0px;
+   width: 100%;
+   box-shadow: inset 1px 4px 33px 0px rgba(0,0,0,0.75);
+}
+
+/* END OF PROJECTS */
+
+/* Contacts */
+#contact {
+   text-align: left;
+   max-width: 700px;
+}
+
+#contact input, #contact textarea {
+   padding: 10px;
+   width: 100%;
+   max-height: 200px;
+   border-radius: 20px;
+   border: 1px solid deepskyblue;
+   box-shadow: inset -1px -1px 1px 0px rgba(255, 255, 255, 0.1), inset 1px 1px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* END OF CONTACTS */
+
+/* Footer */
+footer {
+   padding-top: 0px;
+   padding-bottom: 100px;
+   height: 100px;
+   background-color: black;
+}
+
+footer div.end-line {
+   padding-top: 20px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* END OF FOOTER */
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+   width: 12px;
+   
+}
+::-webkit-scrollbar-track {
+   background: rgba(5, 122, 113, 0.5);        
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgb(38, 126, 177);    
+   border-radius: 20px;       
+   border: 3px solid rgb(13, 95, 13); 
+}
+
+/* --------------END OF SCROLLBAR------------------ */
