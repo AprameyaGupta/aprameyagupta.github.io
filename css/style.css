@@ -12,10 +12,6 @@ body, html {
     scroll-behavior: smooth;
 }
 
-.wrapper {
-   min-height: 100%;
-}
-
 .btn {
    height: 50px;
    width: 150px;
