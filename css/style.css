@@ -197,6 +197,7 @@ hr {
 /* Projects */
 
 .projects .card {
+   min-height: 400px;
    width: 20rem;
    border: 2px solid antiquewhite;
    border-radius: 10px;
